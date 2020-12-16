@@ -1,5 +1,5 @@
 # Overview
-This repo contains instructions on how to crosscompile any program for arm64/armhf/whatever else. It uses `chroot` and `qemu-user` to create really fast user-space builds compared with `qemu` emulators. These scripts made for debian derivatives such as ubuntu, although the produced `rootfs chroot` should work anywhere.
+This repo contains instructions on how to crosscompile any program for arm64/armhf/whatever else. It uses `chroot` and `qemu-user` to create really fast user-space builds compared with `qemu` emulators. These scripts made for debian derivatives such as ubuntu, although the produced `rootfs chroot` should work anywhere. For fedora derivatives like manjaro, see https://nmilosev.svbtle.com/compling-arm-stuff-without-an-arm-board-build-pytorch-for-the-raspberry-pi.
 
 # Requirements
 `sudo apt install qemu-user-static qemu-system-arm virt-manager multistrap`
