@@ -8,6 +8,10 @@ sudo mount --rbind /sys sys/
 sudo mount --rbind /dev dev/
 # So we have a user
 cp /etc/passwd etc/passwd
+# Networking
+cp /etc/resolv.conf etc/resolv.conf
+# Certs for pip3
+cp /etc/ssl/certs/ca-certificates.crt etc/ssl/certs/ca-certificates
 # Pytorch specific stuff
 git clone https://github.com/pytorch/pytorch
 pushd pytorch
